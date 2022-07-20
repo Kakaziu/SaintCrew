@@ -46,7 +46,7 @@
 
 <br>
 
-### Pré-requisitos
+### 💡 Pré-requisitos
 
 Antes de começar você vai precisar ter instalado as seguintes ferramentas:<br><br>
 [Git](https://git-scm.com)<br> [NodeJS](https://nodejs.org/en)<br>

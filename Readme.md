@@ -25,31 +25,31 @@
 <br>
 
 <h1 align="center">
-    <img width="80%" src="./gifs/animation1.gif">
+    <img width="100%" src="./gifs/animation1.gif">
 </h1>
 
 <br>
 
 <h1 align="center">
-    <img width="80%" src="./gifs/animation2.gif">
+    <img width="100%" src="./gifs/animation2.gif">
 </h1>
 
 <br>
 
 <h1 align="center">
-    <img width="80%" src="./gifs/animation3.gif">
+    <img width="100%" src="./gifs/animation3.gif">
 </h1>
 
 <br>
 
 <h1 align="center">
-    <img width="80%" src="./gifs/animation4.gif">
+    <img width="100%" src="./gifs/animation4.gif">
 </h1>
 
 <br>
 
 <h1 align="center">
-    <img width="80%" src="./gifs/animation5.gif">
+    <img width="100%" src="./gifs/animation5.gif">
 </h1>
 
 <br>

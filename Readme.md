@@ -7,9 +7,9 @@
 
 </style>
 
-<h1 align="center">School project</h1>
+<h1 align="center">Saint crew</h1>
 
-<p align="center">Este é um projeto de cadastro de alunos baseado em um sistema digital escolar que eu fiz usando umas tecnologias que estou estudando.</p>
+<p align="center">Este é um projeto de cadastro de alunos baseado em um sistema digital escolar que eu fiz usando umas tecnologias que estou estudando. (Saint Crew é apenas um nome genérico)</p>
 
 <br>
 

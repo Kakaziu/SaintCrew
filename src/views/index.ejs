@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Crew</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <h2>Saint Crew</h2>
+            </nav>
+    
+            <ul>
+                <li><a href="/search">Procurar alunos</a></li>
+                <li><a href="/class">Turmas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <% if(err){ %>
+        <div class="message error">
+            <p><%= err_message %></p>
+        </div>
+    <% } %>
+
+    <% if(saved){ %>
+        <div class="message success">
+            <p>Aluno(a) está no sistema.</p>
+        </div>
+    <% } %>    
+
+    <form action="/register" method="post" id="form">
+
+        <h2>Cadastre um aluno</h2>
+
+        <p>Nome:</p>
+        <input type="text" name="name" id="name">
+        <p class="p-error" id="nameError"></p>
+        <p>Sobrenome:</p>
+        <input type="text" name="last_name" id="lastName">
+        <p class="p-error" id="lastNameError"></p>
+        <p>Idade:</p>
+        <input type="number" name="age" id="age">
+        <p class="p-error" id="ageError"></p>
+        <p>Turma:</p>
+        <input type="number" name="class" id="class">
+        <p class="p-error" id="classError"></p>
+
+        <div class="btn">
+            <button>Salvar</button>
+        </div>
+    </form>
+
+    <script src="/js/indexValidate.js"></script>
+</body>
+</html>

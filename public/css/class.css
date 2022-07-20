@@ -1,0 +1,28 @@
+.container_class{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+}
+
+.class{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+    overflow-y:auto;
+    width: 300px;
+    height: 300px;
+    padding: 10px 20px;
+} 
+
+.class h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.class p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Crew</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/class.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h2>Saint Crew</h2>
+            </nav>
+    
+            <ul>
+                <li><a href="/search">Procurar alunos</a></li>
+                <li><a href="/">Adicionar alunos</a></li>
+            </ul>
+        </div>
+    </header>
+
+     <div class="container_class">
+        <div class="class" id="310">
+            <h2>Turma 310</h2>
+            <% alunos.filter(aluno =>{ %>
+                <% if(aluno.class === 310){ %>
+                    <p> <%= aluno.name %> - <%= aluno.age %> </p>
+                <% } %>    
+           <% }) %>
+        </div>
+
+        <div class="class" id="311">
+            <h2>Turma 311</h2>
+            <% alunos.filter(aluno =>{ %>
+                <% if(aluno.class === 311){ %>
+                    <p> <%= aluno.name %> - <%= aluno.age %> </p>
+                <% } %>    
+           <% }) %>
+        </div>
+
+        <div class="class" id="312">
+            <h2>Turma 312</h2>
+            <% alunos.filter(aluno =>{ %>
+                <% if(aluno.class === 312){ %>
+                    <p> <%= aluno.name %> - <%= aluno.age %> </p>
+                <% } %>    
+           <% }) %>
+        </div>
+     </div>
+</body>
+</html>

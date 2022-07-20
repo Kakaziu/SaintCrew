@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Crew</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/search.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h2>Saint Crew</h2>
+            </nav>
+    
+            <ul>
+                <li><a href="/">Adicionar alunos</a></li>
+                <li><a href="/class">Turmas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <form action="/search/find" id="form">
+        <p>Nome:</p>
+        <input type="text" name="name" id="name"> 
+        <p class="p-error" id="nameError"></p>
+        <p>Sobrenome:</p>
+        <input type="text" name="last_name" id="lastName">
+        <p class="p-error" id="lastNameError"></p>
+        
+        <div class="btn">
+            <button>Achar</button>
+        </div>
+
+        <div id="res">
+            <% if(aluno){ %>
+                <p>Nome: <%= aluno.name %> <%= aluno.last_name %></p>
+                <p>Idade: <%= aluno.age %></p>
+                <p>Turma: <%= aluno.class %></p>
+
+                <div class="btns">
+                    <a href="/edit/<%= aluno._id%>">Editar</a>
+                    <a href="/delete/<%= aluno._id%>">Deletar</a>
+                </div>
+            <% } %>
+
+            <% if(e){ %>
+                <div style="margin: auto; font-size: 18px">Aluno não encontrado</div> 
+            <% } %> 
+
+            <% if(del){ %>
+                <div style="margin: auto; font-size: 18px">Aluno deletado</div>
+            <% } %>    
+        </div>
+    </form>
+
+    <script src="/js/searchValidate.js"></script>
+</body>
+</html>
